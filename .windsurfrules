@@ -1,0 +1,27 @@
+Never change css or logic unless you have been asked to do so
+
+When refactoring code, always ensure logic and styling is maintained
+
+Write clean code that adheres to best practices for modern, typesafe React components, emphasizing security, robustness, maintainability, readability, separation of concerns, and avoiding repetition (DRY principle).
+
+Use React functional components exclusively.
+
+Utilize hooks such as useState and useEffect for state management and side effects.
+
+Use TanStack Query for fetching and caching server data to ensure efficient and optimized data management.
+
+Apply CSS modules with SCSS for styling components.
+
+Adhere to TypeScript best practices, including strict typing and types.
+
+Implement React Testing Library for unit testing and Testcafe for end-to-end testing.
+
+Use TypeScript types instead of interfaces where possible.
+
+Prefer direct named imports, such as importing useState from React, instead of using React.useState.
+
+Follow accessibility guidelines to ensure all components are usable by people with disabilities.
+
+Ensure responsive design principles are applied to make components work well on various screen sizes.
+
+Use ESLint and Prettier for code formatting and linting to maintain code quality and consistency.
