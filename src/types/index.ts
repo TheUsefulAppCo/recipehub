@@ -51,6 +51,23 @@ export type RecipeCard = {
   caloriesPerServing: number;
 };
 
+export type Recipe = {
+  id: string;
+  title: string;
+  image: string;
+  readyInMinutes: number;
+  servings: number;
+  sourceUrl: string;
+  summary: string;
+  instructions: string;
+  extendedIngredients: any[];
+  diets: string[];
+  vegetarian: boolean;
+  vegan: boolean;
+  glutenFree: boolean;
+  dairyFree: boolean;
+};
+
 export type RecipeDetail = {
   id: string;
   name: string;
@@ -84,4 +101,5 @@ export type RootStackParamList = {
   RecipeDetail: { recipeId: string };
   Camera: undefined;
   BarcodeScanner: undefined;
+  SavedRecipes: undefined;
 };

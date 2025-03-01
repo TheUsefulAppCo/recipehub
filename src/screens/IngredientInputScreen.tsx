@@ -18,7 +18,7 @@ import { useIngredientSearch } from '../hooks/useRecipes';
 import { Ingredient, RootStackParamList } from '../types';
 import Button from '../components/Button/Button';
 import IngredientCard from '../components/IngredientCard/IngredientCard';
-import { getIngredients, saveIngredients } from '../utils/mockstorage';
+import { getIngredients, saveIngredients } from '../utils/storage';
 
 type IngredientInputScreenNavigationProp = StackNavigationProp<
   RootStackParamList,

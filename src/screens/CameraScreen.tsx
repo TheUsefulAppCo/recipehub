@@ -8,12 +8,12 @@ import {
   SafeAreaView,
   Alert,
 } from 'react-native';
-import { Camera, CameraType, CameraPictureOptions, CameraRecordingOptions } from 'expo-camera';
+import { Camera } from 'expo-camera';
 import * as ImagePicker from 'expo-image-picker';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Ingredient, RootStackParamList } from '../types';
-import { getIngredients, saveIngredients } from '../utils/mockstorage';
+import { getIngredients, saveIngredients } from '../utils/storage';
 import Button from '../components/Button/Button';
 
 type CameraScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Camera'>;
@@ -45,11 +45,11 @@ const recognizeIngredientsFromImage = async (imageUri: string): Promise<Ingredie
 const CameraScreen = () => {
   const navigation = useNavigation<CameraScreenNavigationProp>();
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
-  const [cameraType, setCameraType] = useState(CameraType.back);
+  const [cameraType, setCameraType] = useState<'front' | 'back'>('back');
   const [isCapturing, setIsCapturing] = useState(false);
   const [capturedImage, setCapturedImage] = useState<string | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const cameraRef = useRef<Camera | null>(null);
+  const cameraRef = useRef<Camera>(null);
 
   // Request camera permissions on mount
   useEffect(() => {
@@ -77,8 +77,8 @@ const CameraScreen = () => {
   };
 
   const switchCameraType = () => {
-    setCameraType(current => 
-      current === CameraType.back ? CameraType.front : CameraType.back
+    setCameraType((current: 'front' | 'back') => 
+      current === 'back' ? 'front' : 'back'
     );
   };
 

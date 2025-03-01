@@ -20,7 +20,7 @@ import {
   RecipeFilters, 
   RootStackParamList 
 } from '../types';
-import { getFilters, saveFilters, getIngredients } from '../utils/mockstorage';
+import { getFilters, saveFilters, getIngredients } from '../utils/storage';
 
 type RecipeFiltersScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
@@ -112,7 +112,7 @@ const RecipeFiltersScreen = () => {
 
       // If no options selected, add 'none'
       if (updatedPreferences.length === 0) {
-        updatedPreferences.push('none');
+        updatedPreferences.push('none' as DietaryPreference);
       }
 
       return {

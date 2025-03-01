@@ -9,6 +9,7 @@ import IngredientInputScreen from '../screens/IngredientInputScreen';
 import RecipeFiltersScreen from '../screens/RecipeFiltersScreen';
 import RecipeListScreen from '../screens/RecipeListScreen';
 import RecipeDetailScreen from '../screens/RecipeDetailScreen';
+import SavedRecipesScreen from '../screens/SavedRecipesScreen';
 // Import native modules screens - commented out for initial testing
 // import CameraScreen from '../screens/CameraScreen';
 // import BarcodeScannerScreen from '../screens/BarcodeScannerScreen';
@@ -55,6 +56,11 @@ const AppNavigation = () => {
           name="RecipeDetail" 
           component={RecipeDetailScreen} 
           options={({ route }) => ({ title: 'Recipe Details' })} 
+        />
+        <Stack.Screen 
+          name="SavedRecipes" 
+          component={SavedRecipesScreen} 
+          options={{ title: 'Saved Recipes' }} 
         />
         {/* Temporarily comment out native module screens for initial testing
         <Stack.Screen 

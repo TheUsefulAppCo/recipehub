@@ -44,6 +44,15 @@ const HomeScreen = () => {
             size="large"
           />
           
+          <Button
+            title="View Saved Recipes"
+            onPress={() => navigation.navigate('SavedRecipes')}
+            type="secondary"
+            fullWidth
+            size="large"
+            style={styles.savedRecipesButton}
+          />
+          
           <View style={styles.divider}>
             <View style={styles.dividerLine} />
             <Text style={styles.dividerText}>or</Text>
@@ -222,6 +231,10 @@ const styles = StyleSheet.create({
   featureDescription: {
     fontSize: 14,
     color: '#666666',
+  },
+  savedRecipesButton: {
+    marginTop: 12,
+    marginBottom: 16,
   },
 });
 

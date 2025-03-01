@@ -9,23 +9,18 @@ import {
   ActivityIndicator,
   SafeAreaView,
   Share,
-  Dimensions,
   useWindowDimensions,
 } from 'react-native';
-import { useRoute, RouteProp, useNavigation } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
+import { useRoute, RouteProp } from '@react-navigation/native';
 import { useRecipe } from '../hooks/useRecipes';
 import { RootStackParamList } from '../types';
 import IngredientCard from '../components/IngredientCard/IngredientCard';
-import { isRecipeSaved, saveRecipe, removeRecipe } from '../utils/mockstorage';
+import { isRecipeSaved, saveRecipe, removeRecipe } from '../utils/storage';
 
 type RecipeDetailScreenRouteProp = RouteProp<RootStackParamList, 'RecipeDetail'>;
-type RecipeDetailScreenNavigationProp = StackNavigationProp<RootStackParamList, 'RecipeDetail'>;
 
 const RecipeDetailScreen = () => {
   const route = useRoute<RecipeDetailScreenRouteProp>();
-  const navigation = useNavigation<RecipeDetailScreenNavigationProp>();
-  const { width } = useWindowDimensions();
   const { recipeId } = route.params;
   const [isSaved, setIsSaved] = useState(false);
   const [activeTab, setActiveTab] = useState<'ingredients' | 'instructions'>('ingredients');

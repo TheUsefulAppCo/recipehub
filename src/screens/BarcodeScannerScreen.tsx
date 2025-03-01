@@ -11,7 +11,7 @@ import { BarCodeScanner } from 'expo-barcode-scanner';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList, Ingredient } from '../types';
-import { getIngredients, saveIngredients } from '../utils/mockstorage';
+import { getIngredients, saveIngredients } from '../utils/storage';
 import Button from '../components/Button/Button';
 
 type BarcodeScannerScreenNavigationProp = StackNavigationProp<

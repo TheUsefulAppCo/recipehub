@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Ingredient, RecipeCard, RecipeDetail, RecipeFilters } from '../types';
+import { Ingredient, RecipeCard, RecipeDetail, RecipeFilters, RecipeDifficulty } from '../types';
 
 // arron: Add your Spoonacular API key here
 const API_KEY = 'ff94b30f4e944a859574f277d5ad5d74';
