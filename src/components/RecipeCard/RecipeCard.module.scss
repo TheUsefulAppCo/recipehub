@@ -1,0 +1,64 @@
+.container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  shadow-color: #000;
+  shadow-offset: 0px 2px;
+  shadow-opacity: 0.1;
+  shadow-radius: 8px;
+  elevation: 5;
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+}
+
+.overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-vertical: 6px;
+  padding-horizontal: 10px;
+  border-radius: 20px;
+}
+
+.matchLabel {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.content {
+  padding: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.detailsContainer {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.detailItem {
+  flex-direction: row;
+  align-items: center;
+}
+
+.detailIcon {
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.detailText {
+  font-size: 14px;
+  color: #666666;
+}
