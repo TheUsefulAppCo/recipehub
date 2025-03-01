@@ -1,0 +1,75 @@
+.container {
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  shadow-color: #000;
+  shadow-offset: 0px 2px;
+  shadow-opacity: 0.1;
+  shadow-radius: 4px;
+  elevation: 3;
+}
+
+.selectedContainer {
+  border-color: #FF6B6B;
+  border-width: 2px;
+  background-color: #FFF5F5;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+}
+
+.imagePlaceholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #FF6B6B;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagePlaceholderText {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contentContainer {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.quantity {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 4px;
+}
+
+.removeButton {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #ff6b6b;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.removeButtonText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 22px;
+}
