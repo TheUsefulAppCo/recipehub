@@ -4,7 +4,7 @@ When refactoring code, always ensure logic and styling is maintained
 
 Write clean code that adheres to best practices for modern, typesafe React components, emphasizing security, robustness, maintainability, readability, separation of concerns, and avoiding repetition (DRY principle).
 
-Use React functional components exclusively.
+Use React functional components and arrow functions exclusively.
 
 Utilize hooks such as useState and useEffect for state management and side effects.
 
