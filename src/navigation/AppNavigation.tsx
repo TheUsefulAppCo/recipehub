@@ -34,7 +34,7 @@ const AppNavigation = () => {
         <Stack.Screen 
           name="Home" 
           component={HomeScreen} 
-          options={{ title: 'RecipeHub' }} 
+          options={{ headerShown: false }} 
         />
         <Stack.Screen 
           name="IngredientInput" 
